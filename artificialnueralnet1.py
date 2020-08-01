@@ -29,8 +29,5 @@ classifier.fit(X_train, y_train, batch_size = 10, epochs = 50)
 y_pred = classifier.predict(X_test)
 y_pred = (y_pred  0.5)
 new_prediction = classifier.predict(sc.transform(np.array([[300, 1, 20, 3, 600, 2, 1, 1, 500,1]])))
-n=new_prediction
-new_prediction = (new_prediction  0.5)
-print(n[0][0])
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
