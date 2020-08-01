@@ -2,7 +2,7 @@ import numpy as np
 import os ; os.environ['HDF5_DISABLE_VERSION_CHECK']='2'
 import matplotlib.pyplot as plt
 import pandas as pd
-dataset = pd.read_csv('Churn_Modelling.csv')
+dataset = pd.read_csv('bankdb.csv')
 X = dataset.iloc[, 313].values
 y = dataset.iloc[, 13].values
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
